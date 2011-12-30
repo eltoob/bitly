@@ -6,7 +6,7 @@ class LinksController < ApplicationController
   def create
   l=Links.create(params[:links])
   shorten=l.shorten
-  @result="mysite.com"+"/"+shorten
+  @result="localhost:3000"+"/"+shorten
   
   
   end
