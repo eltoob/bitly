@@ -1,0 +1,5 @@
+<%= form_for @link, :url => { :action => "create" } do |f| %>
+	<%= f.label :url %><br />
+    <%= f.text_field :url %>
+	<%= f.submit "Create" %>
+<% end %>
